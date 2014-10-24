@@ -138,8 +138,8 @@ ItemSlide.prototype = {
 
     } else {
 
-      this._matrix = this._matrix3d.match( /-.+,/ );
-      this._matrix = parseInt( this._matrix[0].replace( ",","" ), 10 );
+      this._matrix = this._matrix3d.split( "," );
+      this._matrix = parseInt( this._matrix[4].replace( ",","" ), 10 );
 
     };
 
@@ -191,8 +191,8 @@ ItemSlide.prototype = {
 
     } else {
 
-      this._matrix = this._matrix3d.match( /-.+,/ );
-      this._matrix = parseInt( this._matrix[0].replace( ",","" ) );
+      this._matrix = this._matrix3d.split( "," );
+      this._matrix = parseInt( this._matrix[4].replace( ",","" ), 10 );
 
     };
 
